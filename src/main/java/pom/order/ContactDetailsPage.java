@@ -50,7 +50,7 @@ public class ContactDetailsPage {
     public String selectSubway(){
         driver.findElement(subwaySelect).click();
         int subwayCount = driver.findElements(subwayListItem).size();
-        long subwayIndex = getRandomNumber(0,subwayCount);
+        long subwayIndex = getRandomNumber(0,subwayCount-1);
         WebElement element = driver.findElement(By.xpath(".//li[@data-index='"+subwayIndex+"']"));
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", element);
         String subwayName = new WebDriverWait(driver, Duration.ofSeconds(3))
