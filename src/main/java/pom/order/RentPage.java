@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-import static utils.Utils.*;
 import static utils.Utils.getRandomNumber;
 
 public class RentPage {
